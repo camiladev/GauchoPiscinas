@@ -6,7 +6,7 @@
   }
 
   body{
-      background: rgba(0, 206, 209, 0.5); /*nome da cor: DarkTurquoise*/
+      background: whitesmoke; /*nome da cor: DarkTurquoise*/
       font-family: 'Roboto', sans-serif;
       height: 100vh;
       font-size: 12px;
@@ -47,7 +47,7 @@ li {
   .menu{
       background-color: whitesmoke;
       position: fixed;
-      width: 100vw;
+      width: 100%;
       top: 0;
       z-index: 1;
   }
@@ -63,18 +63,25 @@ li {
       text-decoration: none;
       font-family: 'Righteous', cursive;
       color:#191970; /* Nome da cor: MidnightBlue */
+      font-size: 1.2em;
   }
+
+@media (min-width: 400px) {
+    .menu a{
+       font-size: 1.5em;
+    }
+}
 
   .menu a:active,
   .menu a:hover{
-      background-color: teal;
+      background-color: #836FFF;
       color: whitesmoke;
 
   }
 
 .capa {
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     display: flex;   
     justify-content: center;
     align-items: center;
@@ -297,7 +304,7 @@ li {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1056px) {
     .contato .grid{
       
        grid-template-columns: 400px 600px;
