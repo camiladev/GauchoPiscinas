@@ -12,6 +12,10 @@
       font-size: 12px;
   }
 
+a{
+    text-decoration: none;
+}
+
   @media(min-width: 560px){
     body{
         
@@ -59,8 +63,7 @@ li {
 
   .menu a{
       display: block;
-      padding: 10px 20px;
-      text-decoration: none;
+      padding: 10px 20px;      
       font-family: 'Righteous', cursive;
       color:#191970; /* Nome da cor: MidnightBlue */
       font-size: 1em;
@@ -68,8 +71,10 @@ li {
   }
 
 .menu i{
-    padding-right: 2px;
+    padding-right: 10px;
 }
+
+
 
 @media (min-width: 400px) {
     .menu a{
@@ -111,9 +116,38 @@ li {
 
     .capa-servicos{
         margin-left: 2em;
+        display: flex;
+        align-items: center;
     }
 }
 
+.capa{
+    position: relative;
+}
+
+.fundo-capa,
+.home-itens{
+    position: absolute;
+}
+
+.fundo-capa img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: left;
+    opacity: 0.3;
+}
+
+.img-capa img{
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    padding-bottom: 2px;
+} 
+
+.img-capa figure{
+    text-align: center;
+}
 
 .site-title,
 .site-subtitle{
@@ -155,10 +189,6 @@ li {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
-
-/*.servicos{
-    background-color: whitesmoke;
-}*/
 
 .servicos p {
     text-indent: 1.4em;
@@ -217,8 +247,10 @@ li {
     margin-top: 0;
 }
 
-.clientes figure{
-    text-align: center;
+.img-cliente{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .clientes img{
@@ -237,6 +269,7 @@ li {
     .clientes .grid{
       
        grid-template-columns: repeat(2, 250px);
+       
       
     }
 }
@@ -258,7 +291,6 @@ li {
 }
 .contato a{
     color: black;
-    text-decoration: none;
 }
 .contato i{
     font-size: 3em;
@@ -317,3 +349,56 @@ li {
     }
 }
 
+.button-action{
+    background-color: whitesmoke;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    height: 56px;
+    position: fixed;
+    width: 100%;
+    font-family: 'Righteous', cursive;
+    
+    justify-content: space-around;
+    
+}
+
+.button-action a{
+    
+    color:#191970;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    line-height: 17px;
+    overflow: hidden;
+    padding-top: 1.2em;
+}
+
+.button-action i{
+    display: inline-block;
+    line-height: 1px;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+
+.fone-menu{
+    background-color: whitesmoke;
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .button-action{
+      display: none;
+      
+    }
+
+    .fone-menu{
+        display: flex;
+    }
+}
