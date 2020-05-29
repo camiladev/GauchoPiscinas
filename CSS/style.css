@@ -73,7 +73,7 @@ li {
 
 .menu a:active,
 .menu a:hover{
-    background-color: #836FFF;
+    background-color: #4169E1; /* #1E90FF */
     color: whitesmoke;
 }
 
@@ -164,9 +164,6 @@ li {
     font-family: 'Righteous', cursive;
     font-size: 1.4em;
     line-height: 1.8em;
-
-    /*clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 0% 50%);
-    background-color: #836FFF ;*/
 }
 
 .servicos,
@@ -333,7 +330,7 @@ li {
 @media (min-width: 600px) {
     .contato .grid{
       
-       grid-template-columns: 290px auto;
+       grid-template-columns: 300px auto;
        margin-bottom: 0px;
     }
 }
@@ -341,9 +338,14 @@ li {
 @media (min-width: 1056px) {
     .contato .grid{
       
-       grid-template-columns: 400px 600px;
+       grid-template-columns: auto 600px;
        margin-bottom:0px;
     }
+}
+
+.horario{
+    margin-top: 1.5em;
+    line-height: 1.5em;
 }
 
 .button-action{
@@ -355,7 +357,7 @@ li {
     height: 56px;
     position: fixed;
     width: 100%;
-    font-family: 'Righteous', cursive;
+    font-family: 'Open Sans', sans-serif;
     
     justify-content: space-around;
     
