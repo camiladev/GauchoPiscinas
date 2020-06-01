@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" dir="ltr" itemscope itemtype="https://schema.org/LocalBusiness">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no"> 
@@ -26,7 +27,7 @@
                 <li><a href="#contato">Contato</a></li>
                 <li>
                     <div class="fone-menu">
-                        <a href="tel:+55-48-99609-4466">
+                        <a href="tel:+55-48-99609-4466" itemprop="telephone">
                             <i class="fas fa-phone-alt"></i>Ligar Agora</a></li>
                     </div>
             </ul>
@@ -39,22 +40,22 @@
                     <div class="titulo">
                         <div class="img-capa">
                             <figure>
-                                <img src="img/LogoPiscinas_Transparente.png" alt="Logo Gaucho Piscinas">
+                                <img src="img/LogoPiscinas_Transparente.png" alt="Logo Gaucho Piscinas" itemprop="logo">
 
                             </figure>
                         </div>
-                        <h1 class="site-title">Gaúcho Piscinas</h1>
-                        <h2 class="site-subtitle">Limpeza e Manutenção de Piscinas</h2>
+                        <h1 class="site-title" itemprop="name">Gaúcho Piscinas</h1>
+                        <h2 class="site-subtitle" itemprop="description">Limpeza e Manutenção de Piscinas</h2>
         
                     </div>
                     <div class="capa-servicos">
                         <nav class="serv">
-                            <ul>
-                                <li>Limpeza de Manutenção</li>
-                                <li>Limpeza Emergencial</li>
-                                <li>Troca de Areia</li>
-                                <li>Instalação de Luminárias</li>
-                                <li>Reparos em Geral</li>
+                            <ul itemprop = "hasOfferCatalog" itemscope itemtype = "http://schema.org/OfferCatalog">
+                                <li itemprop = "itemListElement"><span itemprop="name">Limpeza de Manutenção</span></li>
+                                <li itemprop = "itemListElement"><span itemprop="name">Limpeza Emergencial</span></li>
+                                <li itemprop = "itemListElement"><span itemprop="name">Troca de Areia</span></li>
+                                <li itemprop = "itemListElement"><span itemprop="name">Instalação de Luminárias</span></li>
+                                <li itemprop = "itemListElement"><span itemprop="name">Reparos em Geral</span></li>
                             </ul>
                         </nav>
                     </div>
@@ -69,12 +70,12 @@
 
     <section class="servicos" id="servicos">
         <h2>Serviços</h2>
-            <div class="serv-layout grid">
+            <div class="serv-layout grid" itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
                 <div class="desc-servico">
                     <figure>
                         <i class="fas fa-swimming-pool"></i>
                     </figure>
-                    <h2>Limpeza de Manutenção</h2>
+                    <h2 itemprop="name">Limpeza de Manutenção</h2>
                     <p>
                         Visitas semanais para ajustar os parâmetros 
                         químicos da água como pH, alcalinidade, cloro e limpeza física com 
@@ -87,7 +88,7 @@
                     <figure>
                         <i class="fab fa-medrt"></i>
                     </figure>
-                    <h2>Limpeza Emergencial</h2>
+                    <h2 itemprop="name">Limpeza Emergencial</h2>
                     <p>
                         Tratamento físico e químico para 
                         restaurar as condições ideais de uso.
@@ -99,7 +100,7 @@
                     <figure>
                         <i class="fas fa-exchange-alt"></i>
                     </figure>
-                    <h2>Troca de Areia do filtro</h2>
+                    <h2 itemprop="name">Troca de Areia do filtro</h2>
                     <p>
                         Substituição da areia especial para filtro, anéis 
                         de vedação se necessário, e limpeza do local.
@@ -111,7 +112,7 @@
                     <figure>
                         <i class="fas fa-tools"></i>
                     </figure>
-                    <h2>Instalação de Luminárias</h2>
+                    <h2 itemprop="name">Instalação de Luminárias</h2>
                     <p>
                         Instalação e reparos de luminárias de piscina.
                     </p>
@@ -173,15 +174,15 @@
         <div class="layout-contato grid">
             <div class="rede-social">
                 <ul>
-                    <li class="whats"><a target="_blank" href="https://api.whatsapp.com/send?phone=5548996094466&amp;text=">
+                    <li class="whats"><a target="_blank" href="https://api.whatsapp.com/send?phone=5548996094466&amp;text=" itemprop="telephone">
                         <i class="fab fa-whatsapp-square"></i>(48) 99609-4466</a></li>
-                    <li class="face"><a target="_blank" href="https://www.facebook.com/gauchopiscinas"><i class="fab fa-facebook-square"></i>/gauchopiscinas</a></li>
-                    <li class="insta"><a target="_blank" href="https://www.instagram.com/gauchopiscinas"><i class="fab fa-instagram-square"></i>@gauchopiscinas</a></li>
-                    <li class="mail"><a href="mailto:piscinasgaucho@gmail.com"><i class="fas fa-envelope-square"></i>piscinasgaucho@gmail.com</a></li>
+                    <li class="face"><a target="_blank" href="https://www.facebook.com/gauchopiscinas" itemprop="url"><i class="fab fa-facebook-square"></i>/gauchopiscinas</a></li>
+                    <li class="insta"><a target="_blank" href="https://www.instagram.com/gauchopiscinas" itemprop="url"><i class="fab fa-instagram-square"></i>@gauchopiscinas</a></li>
+                    <li class="mail"><a href="mailto:piscinasgaucho@gmail.com" itemprop="email"><i class="fas fa-envelope-square"></i>piscinasgaucho@gmail.com</a></li>
                 </ul>
                 <div class="horario">
                     <h3>Horário de Funcionamento:</h3>
-                    <p>De Segunda-Feira a Sexta-Feira das 08h as 17h</p>
+                    <p itemprop="openingHours" content="Mo-Fr 08:00-17:00">De Segunda-Feira a Sexta-Feira das 08h as 17h</p>
                 </div>      
               
             </div>
