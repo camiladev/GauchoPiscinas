@@ -208,6 +208,9 @@ li {
        grid-template-columns: repeat(3, 250px);
       
     }
+    .desc-servico{    
+        padding: 0em;  
+    }
 }
 
 @media (min-width: 1200px) {
@@ -215,6 +218,9 @@ li {
        
        grid-template-columns: repeat(4, 250px);
       
+    }
+    .desc-servico{    
+        padding: 0em;  
     }
 }
 
@@ -224,10 +230,8 @@ li {
 }
 
 .desc-servico{
-    width: 250px;
-    text-align: center;
-    margin: 2em;
-    
+    text-align: center; 
+    padding: 0em 2em;  
 }
 
 .desc-servico figure{
