@@ -1,0 +1,119 @@
+@media (min-width: 400px) {
+    .menu a{
+       font-size: 1.2em;
+    }
+}
+
+@media(min-width: 560px){
+    body{
+        
+        font-size: 14px;
+    }
+
+    .capa .grid{
+        grid-template-columns: repeat(2, auto);
+     }
+ 
+     .capa{
+         justify-content: center;
+         align-items: center;
+         padding: 0;
+         
+     }
+ 
+     .capa-servicos{
+         margin-left: 2em;
+         display: flex;
+         align-items: center;
+     }
+
+}
+
+@media (min-width: 600px) {
+    .servicos .grid{
+      
+       grid-template-columns: repeat(2, 250px);
+      
+    }
+
+    .clientes .grid{      
+        grid-template-columns: repeat(2, 250px);
+ 
+     }
+
+     .layout-contato{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato .grid{
+      
+        grid-template-columns: 300px auto;
+        margin-bottom: 0px;
+     }
+
+}
+
+@media (min-width: 640px) {
+    .button-action{
+      display: none;
+      
+    }
+
+    .fone-menu{
+        display: flex;
+    }
+}
+
+
+@media (min-width: 800px) {
+    body{
+        
+        font-size: 18px;
+    }
+
+    .servicos .grid{
+       
+       grid-template-columns: repeat(3, 250px);
+      
+    }
+    .desc-servico{    
+        padding: 0em;  
+    }
+
+    .clientes .grid{
+       
+        grid-template-columns: repeat(3, 250px);
+       
+     }
+}
+
+@media (min-width: 1056px) {
+    .contato .grid{
+      
+       grid-template-columns: auto 600px;
+       margin-bottom:0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body{
+        
+        font-size: 20px;
+    }
+
+    .servicos .grid{
+       
+       grid-template-columns: repeat(4, 250px);
+      
+    }
+    .desc-servico{    
+        padding: 0em;  
+    }
+
+    .clientes .grid{
+       
+        grid-template-columns: repeat(4, 250px);
+       
+     }
+}
