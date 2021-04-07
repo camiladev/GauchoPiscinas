@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../filtros/src/style/ListaFiltro/index.css">
+    <title>Lista de Filtros</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Lista de Filtros</h2>
+            <form action="">
+                <label for="">Pesquisar por:</label>
+                <input type="text"
+                        id="pesquisa"
+                        placeholder="Fabricante"
+                />
+                <button 
+                    type="button" 
+                    id="btnPesquisa"
+                    >
+                    Pesquisar
+                </button>
+                <button 
+                    type="button" 
+                    id="btnLimpar"
+                    >
+                    Limpar
+                </button>
+            </form>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fabricante</th>
+                        <th>Modelo</th>
+                        <th>Carga de Areia ( Kg )</th>
+                    </tr>
+                </thead>
+                <tbody id="body-table">                 
+                </tbody>
+            </table>
+            
+        </main>
+    </div>
+    <script type='text/javascript' src="../filtros/src/script/script.js"></script>
+</body>
+</html>
